@@ -1,15 +1,15 @@
 <template>
   <div>
-    <rms-select></rms-select>
+    <rms-menu></rms-menu>
   </div>
 </template>
 
 <script>
-import rmsSelect from "@/components/rmsSelect.vue";
+import rmsMenu from "@/components/rmsMenu/rmsMenu01.vue";
 
 export default {
   components: {
-    rmsSelect
+    rmsMenu
   }
 }
 </script>
