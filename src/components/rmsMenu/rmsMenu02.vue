@@ -64,7 +64,7 @@
             </el-upload>
             <h3 style="text-align: left">单独返厂信息上传</h3>
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm"
-                     style="text-align: left">
+                     style="text-align: left" :inline="true">
               <el-form-item label="零部件名称" prop="name">
                 <el-input v-model="ruleForm.name"></el-input>
               </el-form-item>
@@ -95,6 +95,7 @@
         </el-main>
       </el-container>
     </el-container>
+    <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop>
   </div>
 </template>
 <script>
